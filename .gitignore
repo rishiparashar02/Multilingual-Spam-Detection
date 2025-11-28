@@ -1,0 +1,16 @@
+# Ignore everything except Jupyter notebooks
+
+# Ignore all files
+*
+
+# But do not ignore directories (so exceptions below work)
+!*/
+
+# Keep .gitignore tracked
+!.gitignore
+
+# Allow Jupyter notebooks and reuirements
+!*.ipynb
+!*.requirements.txt
+!*.app.py
+# (If you also want to allow other files, add additional "!<pattern>" rules)
