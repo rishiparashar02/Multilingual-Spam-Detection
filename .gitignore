@@ -1,16 +1,26 @@
-# Ignore everything except Jupyter notebooks
-
-# Ignore all files
+# Ignore everything
 *
 
-# But do not ignore directories (so exceptions below work)
+# But do NOT ignore folders
 !*/
 
 # Keep .gitignore tracked
 !.gitignore
 
-# Allow Jupyter notebooks and reuirements
+# Allow Jupyter notebooks
 !*.ipynb
+
+# Allow README
+!README.md
+!README.MD
+!readme.md
+
+# Allow requirements file
+!requirements.txt
 !*.requirements.txt
-!*.app.py
-# (If you also want to allow other files, add additional "!<pattern>" rules)
+
+# Allow app.py or any API file
+!*.py
+
+# Allow CSV dataset (optional — remove if you don't want to upload data)
+!*.csv
